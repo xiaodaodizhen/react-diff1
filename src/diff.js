@@ -16,7 +16,7 @@ const REMOVE = "REMOVE";
 const REPLACE = "REPLACE";
 let Index = 0;
 
-// 比较属性的方法
+// 比较属性是否变更的方法
 function diffAttr(oldAttrs, newAttrs) {
   let patch = {};
   // 判断老属性和新属性的关系
@@ -43,7 +43,7 @@ function diffChildren(oldChild, newChild, patches) {
   });
 }
 
-// 判断节点是不是字符串
+// 判断节点是不是字符串||数字，这里只是判断字符串
 function isString(node) {
   return Object.prototype.toString.call(node) === "[Object String]";
 }
