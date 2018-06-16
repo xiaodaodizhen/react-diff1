@@ -1,4 +1,4 @@
-
+// 封装公共方法
 let utils = {
   setAttr(ele, attr, val) {
     // 标签属性  className id  value style...
