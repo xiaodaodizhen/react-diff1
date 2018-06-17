@@ -105,7 +105,7 @@ function diff(oldChildren, newChildren) {
       newIndex++;
     }
   }
-  // ##### 把老数组中多余的删除掉
+  // ##### 把老数组中多余的删除掉-----参照图四
   while (oldIndex++ < oldChildren.length) {
     remove(newIndex);
   }
